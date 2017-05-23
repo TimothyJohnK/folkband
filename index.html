@@ -14,7 +14,7 @@
 
 <header>
   <section>
-    <h2><span class='nav-bar-buttons'>Home</span><span class='nav-bar-buttons'>Listen</span><span class='nav-bar-buttons'>Song List</span><span class='nav-bar-buttons' href='mailto:timkirchhofmusic@gmail.com' class='email'>Contact</span>
+    <h2><span class='nav-bar-buttons'>Home</span><span class='nav-bar-buttons'>Listen</span><span class='nav-bar-buttons navBar-songlist'>Song List</span> <a href='mailto:timkirchhofmusic@gmail.com' class='nav-bar-buttons email'>Contact</a>
   </section>
     <h1>The Wandering Constable</h1>
 </header>
@@ -24,7 +24,7 @@
       <h2><span>Ben Berg - bass, guitar, voice</span><span>Tim Kirchhof - guitar, voice</span><span>Jon Osthus - mandolin, octave mandolin</span></h2>
     </div>
     <div class='bio'>
-      <h2>The Wandering Constable plays American music that speaks directly to people.  Union songs, bluegrass, folk melodies, and instrumentals influenced by the rich tapestry of cultures found on this continent and beyond.</h2>
+      <h2>The Wandering Constable plays American music about people and their lives.  Union songs, bluegrass, folk melodies, and instrumentals influenced by the rich tapestry of cultures found on this continent.</h2>
     </div>
   </div>
   <div class='song-section'>
@@ -67,7 +67,15 @@
       <ul>You Rascal You</ul>
     </div>
   </div>
+  <div class='bottom-padding'></div>
 </section>
-
+<footer class='copyright'></footer>
 </body>
+<script>
+  var dateCnstnt = new Date(),
+    copyright = document.getElementsByClassName('copyright')[0];
+     (function year() {
+    copyright.innerText = '©The Wandering Constable ' + dateCnstnt.getFullYear()
+  })();
+</script>
 </html>
