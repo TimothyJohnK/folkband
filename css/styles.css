@@ -1,0 +1,64 @@
+body {
+  background-color: white;
+  font-family: 'Amatic SC', cursive;
+  display: grid;
+  /*font-family: 'Fredericka the Great', cursive;*/
+}
+
+header {
+  background-image: url(../images/header.jpg);
+  height: 80%;
+}
+
+.body-section {
+
+}
+
+h1 {
+  text-align: center;
+  font-size: 5em;
+  padding: .5em;
+}
+
+h2 {
+  display: flex;
+  display: -webkit-flex;
+  font-size: 2em;
+  text-align: center;
+}
+
+span {
+  padding: .2em;
+  flex: 1;
+  justify-content: space-around;
+}
+.bio {
+  width: 90%;
+  margin: auto;
+}
+.song-list-header {
+  display: flex;
+  justify-content: center;
+  text-decoration: underline;
+}
+.song-list {
+  display: flex;
+  flex-direction: row;
+  flex-flow: row wrap;
+  font-size: 1.6em;
+  justify-content: space-between;
+  text-align: center;
+}
+ul {
+  flex: 1 1 25%;
+  margin: 0;
+}
+@media (max-width: 480px) {
+  h2 {
+    flex-direction: column;
+    font-size: 1.6em;
+  }
+  .song-list {
+    font-size: 1.2em;
+  }
+}
