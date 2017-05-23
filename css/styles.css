@@ -50,8 +50,9 @@ span {
   text-align: center;
 }
 ul {
-  flex: 1 1 25%;
+  flex: 1 1 33%;
   margin: 0;
+  padding: 0;
 }
 @media (max-width: 480px) {
   h2 {
