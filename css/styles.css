@@ -4,18 +4,38 @@ html {
 body {
   background-color: white;
   font-family: 'Amatic SC', cursive;
-  /*font-family: 'Fredericka the Great', cursive;*/
 }
 
 header {
   background-image: url(../images/header.jpg);
-  box-shadow: 2px 4px 3px lightgray;
+  box-shadow: 4px 4px 3px lightgray;
   height: 80%;
+  text-shadow: 3px 3px 10px white;
 }
 
 .nav-bar-buttons {
+  margin: .3em .1em;
+  border-radius: 10px;
   flex: 1;
+
 }
+.nav-bar-buttons:hover {
+  padding: -2px;
+  cursor: pointer;
+  -webkit-animation: mymove 5s; /* Chrome, Safari, Opera */
+  animation: mymove 5s infinite;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes mymove {
+    50% {background-color: cyan;}
+}
+
+/* Standard syntax */
+@keyframes mymove {
+    50% {background-color: cyan;}
+}
+
 
 h1 {
   text-align: center;
@@ -39,9 +59,17 @@ span {
   margin: auto;
 }
 .song-list-header {
+  font-size: 1.6em;
   display: flex;
   justify-content: center;
-  text-decoration: underline;
+  text-decoration: underline; 
+}
+.song-section {
+  background-image: url(../images/header.jpg);
+  background-position: bottom;
+  box-shadow: 4px 4px 3px lightgray;
+  text-shadow: 1px 0px 3px white;
+  padding-bottom: 1em;
 }
 .song-list {
   display: flex;
@@ -50,20 +78,26 @@ span {
   font-size: 1.6em;
   justify-content: space-between;
   text-align: center;
-  background-image: url(../images/header.jpg);
-  background-position: bottom;
-  box-shadow: 0px -4px 3px lightgray;
+}
+.center {
+  padding-bottom: 2em;
+
 }
 ul {
   flex: 1 1 33%;
   margin: 0;
   padding: 0;
-  text-shadow: 1px 0px 3px white;
 }
 @media (max-width: 480px) {
+  h1 {
+    font-size: 3em;
+  }
   h2 {
     flex-direction: column;
     font-size: 1.6em;
+  }
+  .nav-bar-buttons {
+    margin-bottom: -.5em;
   }
   .song-list {
     font-size: 1.4em;
