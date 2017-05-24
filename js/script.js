@@ -11,3 +11,4 @@ window.addEventListener('load', function () {
   //   document.getElementsByClassName('song-section')[0].style.display = 'flex'
   // });
  });
+});
