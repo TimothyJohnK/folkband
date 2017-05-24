@@ -5,7 +5,7 @@ window.addEventListener('load', function () {
 
   
   songList.addEventListener('load', function () {
-    document.getElementsByClassName('song-section')[0].style.display = 'none';
+    document.getElementsByClassName('song-section')[0].style.display = 'flex';
   
   // songList.addEventListener('click', function () {
   //   document.getElementsByClassName('song-section')[0].style.display = 'flex'
